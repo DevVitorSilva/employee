@@ -21,6 +21,13 @@ public class Main {
             System.out.println("Employee #" + i + ":");
             System.out.print("Id: ");
             id = sc.nextInt();
+            for(Employee employeeId : employees){
+                if(employeeId.getId() == id){
+                    System.out.println("Id not allowed");
+                    System.out.print("Id: ");
+                    id = sc.nextInt();
+                }
+            }
             sc.nextLine();
             System.out.print("Name: ");
             name = sc.nextLine();
@@ -30,7 +37,7 @@ public class Main {
             employees.add(employee);
         }
         for(Employee employee : employees){
-            System.out.printf("%d, %s, %.2f", employee.getId(), employee.getName(), employee.getSalary());
+            System.out.printf("%d, %s, %.2f\n", employee.getId(), employee.getName(), employee.getSalary());
         }
         sc.close();
     }
