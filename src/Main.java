@@ -29,7 +29,9 @@ public class Main {
             employee = new Employee(id, name, salary);
             employees.add(employee);
         }
-
+        for(Employee employee : employees){
+            System.out.printf("%d, %s, %.2f", employee.getId(), employee.getName(), employee.getSalary());
+        }
         sc.close();
     }
 }
