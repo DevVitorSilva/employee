@@ -10,7 +10,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getId(){
+    public Integer getId(){
         return this.id;
     }
 
@@ -22,7 +22,7 @@ public class Employee {
         this.name = name;
     }
 
-    public double getSalary(){
+    public Double getSalary(){
         return this.salary;
     }
 
